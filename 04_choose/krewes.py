@@ -43,13 +43,9 @@ krewes = {
            8:["ALEKSANDRA",  "NAKIB",  "AMEER",  "HENRY",  "DONALD",  "YAT LONG",  "SEBASTIAN",  "DAVID",  "YUKI",  "SHAFIUL",  "DANIEL",  "SELENA",  "JOSEPH",  "SHINJI",  "RYAN",  "APRIL",  "ERICA",  "JIAN HONG",  "VERIT",  "JOSHUA",  "WILSON",  "AAHAN",  "GORDON",  "JUSTIN",  "MAYA",  "FAIYAZ",  "SHREYA",  "ERIC",  "JEFFERY",  "BRIAN",  "KEVIN",  "SAMSON",  "BRIAN",  "HARRY",  "Wanying", "Kevin"]
          }
 def randomdevo():
-    period = list(krewes.keys())
-    lenp = len(period)
-    randp = random.randint(0,lenp-1)
-    devos = list(krewes.get(period[randp]))
-    lend = len(devos)
-    randd = random.randint(0,lend-1)
-    print(devos[randd] + " from period " + str(period[randp]))
+    period = random.choice(list(krewes.keys()))
+    devos = random.choice(krewes[period])
+    print(devos + " from period " + str(period))
 
 
 def morethanone():
@@ -58,16 +54,12 @@ def morethanone():
         print("You are dumb. Read directions.")
         numberofdevos = int(input("How many people would you like? Pick carefully\n"))
     for x in range(numberofdevos):
-        period = list(krewes.keys())
-        lenp = len(period)
-        randp = random.randint(0,lenp-1)
-        devos = list(krewes.get(period[randp]))
-        lend = len(devos)
-        randd = random.randint(0,lend-1)
-        print(devos[randd] + " from period " + str(period[randp]))
-        krewes[period[randp]].remove(devos[randd])
+        period = random.choice(list(krewes.keys()))
+        devos = random.choice(krewes[period])
+        print(devos + " from period " + str(period))
+        krewes[period].remove(devos)
         if len(devos) == 1:
-            krewes.pop(period[randp])
+            krewes.pop(period)
 
 
 
