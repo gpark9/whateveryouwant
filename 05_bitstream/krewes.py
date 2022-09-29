@@ -15,7 +15,8 @@ Q/C/C
 How do I make a dictionary within a dictionary?
 
 DISCO
-.split method, how to assign keys and values in a dictionary
+.split method
+how to assign keys and values in a dictionary
 '''
 
 
