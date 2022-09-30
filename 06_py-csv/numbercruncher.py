@@ -22,7 +22,7 @@ dict.pop("Total")
 r = random.random() * total
 
 sum = 0
-for x in list(dict.keys()):
+for x in dict:
      sum += float(dict[x])
      if r < sum :
         print(x)
