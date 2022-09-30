@@ -33,6 +33,8 @@ split = content.split("\n")
 dict = {}
 
 for x in split:
+    if x == "" :
+        continue
     if x[0] == "\"" :
         job = x.split("\",")
     else :
