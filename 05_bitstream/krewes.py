@@ -1,5 +1,5 @@
 '''
-Gitae Park & Gabriel Thompson
+GAGI - Gitae Park & Gabriel Thompson
 SoftDev
 K05 -- krewes/Making a random generator to return the name of a student given a file krewes.txt
 2022-09-29
