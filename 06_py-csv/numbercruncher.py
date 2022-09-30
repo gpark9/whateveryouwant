@@ -19,7 +19,7 @@ total = dict["Total"]
 dict.pop("Job Class")
 dict.pop("Total")
 
-r = random.random() * 99.8
+r = random.random() * total
 
 sum = 0
 for x in list(dict.keys()):
