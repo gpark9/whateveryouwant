@@ -1,5 +1,5 @@
 '''
-Gitae Park & Gabriel Thompson
+GAGI - Gitae Park & Gabriel Thompson
 SoftDev
 K06 -- StI/O: Divine your Destiny!
 2022-09-30
