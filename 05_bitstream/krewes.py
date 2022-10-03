@@ -21,18 +21,27 @@ how to assign keys and values in a dictionary
 
 
 import random
-f = open('krewes.txt', 'r')
-content = f.read()
 
-each = content.split("@@@")
+opened_file = open('krewes.txt', 'r')
+content = opened_file.read()
 
-devos = {}
+devos_list = content.split("@@@")
+devos_dict = {}
 
-for x in each :
-    individual = x.split("$$$")
-    devos[individual[1]] = [individual[0], individual[2]]
+for devo in devos_list:
+    pd_name_ducky = devo.split("$$$")
+    pd = pd_name_ducky[0]
+    name = pd_name_ducky[1]
+    ducky = pd_name_ducky[2]
+
+    devos_dict[name] = [pd, ducky]
     
-rand = random.choice(list(devos.keys()))
+random_devo = random.choice(list(devos_dict.keys()))
 
 
-print(rand + " in pd " + devos[rand][0] + " with ducky " + devos[rand][1])
+print(random_devo + \
+      " in pd " + \
+      devos_dict[random_devo][0] + \
+      " with ducky " + \
+      devos_dict[random_devo][1])
+
