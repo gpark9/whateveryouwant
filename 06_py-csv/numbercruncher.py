@@ -25,38 +25,40 @@ can interate through keys ofd dictionary just by for x in dict
 
 import random
 
-f = open('occupations.csv', 'r')
-content = f.read()
+opened_file = open('occupations.csv', 'r')
+content = opened_file.read()
 
-split = content.split("\n")
+lines = content.split("\n")
 
-dict = {}
+percentages = {}
 
-for x in split:
-    if x == "" :
+for line in lines:
+    if line == "" :
         continue
-    if x[0] == "\"" :
-        job = x.split("\",")
-    else :
-        job = x.split(",")
-    dict[job[0]] = job[1]
-    
-total = dict["Total"]
+    if line[0] == "\"" :
+        job_percent = line.split("\",")
+    else:
+        job_percent = line.split(",")
 
-dict.pop("Job Class")
-dict.pop("Total")
+    job = job_percent[0]
+    percent = job_percent[1]
+    percentages[job] = percent
+    
+total = percentages["Total"]
+
+percentages.pop("Job Class")
+percentages.pop("Total")
 
 r = random.random() * float(total)
 
 sum = 0
-for x in dict:
-     sum += float(dict[x])
-     if r < sum :
-        if x[0] == "\"" :
-            x = x[1:]
-        print(x)
+for key in percentages:
+     sum += float(percentages[key])
+     if r < sum:
+        if key[0] == "\"" :
+            key = key[1:]
+        print(key)
         break
-
 
 
 
