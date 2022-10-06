@@ -24,6 +24,8 @@ can interate through keys ofd dictionary just by for x in dict
 
 
 import random
+import time
+t0 = time.time()
 
 opened_file = open('occupations.csv', 'r')
 content = opened_file.read()
@@ -60,6 +62,6 @@ for key in percentages:
         print(key)
         break
 
-
+print(time.time() - t0)
 
 
