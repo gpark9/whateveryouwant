@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# Blinking Holly Fountains - Gitae Park, Ravindra Mangar, Sam Cowan
 # SoftDev
 # Oct 2022
 
