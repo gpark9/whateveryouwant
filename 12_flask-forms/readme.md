@@ -1,0 +1,14 @@
+2 Whites & a Gray: Nada Hameed, Gitae Park, Brianna Tieu
+Softdev
+K12 -- Take and Give
+2022-10-18
+time spent: .5
+
+DISCO:
+     - a 'GET' request uses request.args
+     - a 'POST' request uses request.form
+     - forcing a 'POST' request -- you must include method = 'post' in the opening <form> tag
+     - when forcing a 'POST' request, all references to response.args must be changed to response.form
+
+QCC:
+     - Why do we have to force a 'POST' request, but not a 'GET' request?
