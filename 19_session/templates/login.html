@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  2 Whites & a Gray: Nada Hameed, Gitae Park, Brianna Tieu
+  Softdev
+  K12 -- Take and Give
+  2022-10-18
+
+     simple demo of HTML forms via Flask
+
+     trioTASK:
+     If any member of team has forms experience, let their know-how OSMOTE.
+     If no one does, seek external assistance.
+
+     PROTIP: Revisit code from intro if you have it.
+     Peruse this code together and discuss how it should work,
+       in conjunction with the back end apparatus.
+-->
+
+
+<html>
+
+  <head>
+    <title> LOGIN PAGE </title>
+  </head>
+
+  <body>
+    <h1>
+      Welcome to the Blog Page!
+    </h1>
+
+
+    <h3>
+      Username:
+      <form action="/auth" method="POST">
+        <input type="text" name="username">
+      </form>
+    </h3>
+    <!-- when we submit something, we go to another page, linkage between front and back end, the route needs to match exactly with the route from python-->
+    <h4>
+      Password:
+      <form action="/auth" method="POST">
+        <!-- the input box -->
+        <input type="text" name="password">
+      </form>
+    </h4>
+
+    <h5>
+      <form action="/auth" method="POST">
+        <input type="submit" name="sub1">
+      </form>
+    </h5>
+
+    <br>
+  </body>
+
+</html>
