@@ -1,7 +1,11 @@
-from flask import Flask
-from flask import session
-from flask import render_template
-from flask import request
+'''
+2 Whites & a Gray: Nada Hameed, Gitae Park, Brianna Tieu
+Softdev
+K19 -- Sessions Greetings
+2022-11-07
+'''
+
+from flask import Flask, session, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -13,32 +17,31 @@ temp_password = "bt"
 
 @app.route('/')
 def index():
-    return render_template( 'login.html' )
-    '''
     if 'username' in session:
-        return f'Logged in as {session["username"]}'
-    return 'You are not logged in'
-    '''
+        return redirect(url_for('welcome'))
+    else:
+        return render_template( 'login.html' )
 
 @app.route('/auth', methods=['GET', 'POST'])
 def authenticate():
-    #if request.args['username'] == temp_username and request.args['password'] == temp_password :
-    #    return render_template('signup.html', user=request.form['username'], method = request.method)
+    if request.method == 'GET':
+        if request.args['username'] == temp_username and request.args['password'] == temp_password:
+            session['username'] = request.args['username']
+            session['password'] = request.args['password']
+            return redirect(url_for('welcome'))
+        else:
+            if request.args['username'] != temp_username and request.args['password'] == temp_password:
+                return render_template( 'login.html', login='incorrect username' )
+            if request.args['username'] == temp_username and request.args['password'] != temp_password:
+                return render_template( 'login.html', login='incorrect password' )
+            if request.args['username'] != temp_username and request.args['password'] != temp_password:
+                return render_template( 'login.html', login='incorrect username and password' )
 
-    if request.method == 'POST':
-        session['username'] = request.form['username']
-        return redirect(url_for('index'))
-    return
-        '''
-        <form method="post">
-            <p><input type=text name=username>
-            <p><input type=submit value=Login>
-        </form>
-        '''
+@app.route('/welcome', methods=['GET', 'POST'])
+def welcome():
+    return render_template( 'response.html', user=session['username'] )
 
-
-
-@app.route('/logout')
+@app.route('/logout', methods=['GET', 'POST'])
 def logout():
     # remove the username from the session if it's there
     session.pop('username', None)
