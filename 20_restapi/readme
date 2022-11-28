@@ -1,0 +1,12 @@
+Pateo Furniture Gitae Park, Vivian Teo
+Softdev
+K20 A RESTful Journey
+2022-11-21
+
+DISCO
+* Learned how to use json and parse content from a url into a json object
+* Learned how to put in query into a url with the params parameter of requests.get
+* Learned what %0A means in the context of a url --> represents a new line. Ran into an error where the txt file had a new line and that messed with our url.
+
+QCC:
+* Would it be better to have a python parameter for the key instead of a txt file? 
