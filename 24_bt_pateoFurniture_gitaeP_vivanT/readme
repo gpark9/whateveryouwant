@@ -1,0 +1,15 @@
+Pateo Furniture: Gitae Park, Vivian Teo
+SoftDev
+K24 Duckies Story Using Bootstrap
+2022-11-30
+time spent: 1.5 hrs
+
+q0: 0
+q1: Bootstrap is preferred because it has a nicer aesthetic.
+
+DISCO
+    * Bootstrap has a more soft aesthetic compared to Foundation. Much more rounded edges for features like fonts, buttons, etc.
+
+QCC
+    * How do we make the pretty buttons actually work and do stuff?
+    * The grid feature in our neighbor's tutorial changed unfavorably according to screen size, how can we make it more adaptable to different screen sizes?
