@@ -1,0 +1,18 @@
+Team JiangPark Morgan :: Ian Jiang, Gitae JiangPark
+SoftDev pd7
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* define a function in javascript with function
+* console.log logs the output to the dev console
+* test scheme code in DrRacket
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How else is Java and Javascript different syntax wise?
+=================================================================
+
+
