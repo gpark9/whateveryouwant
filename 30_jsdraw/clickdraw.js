@@ -20,18 +20,20 @@ var drawRect = function(e) {
     var mouseX = e.offsetX;
     var mouseY = e.offsetY;
     console.log("mouseclick registered at ", mouseX, mouseY);
-    ctx.fillSyle = "red";
+    ctx.fillStyle = "red";
     ctx.fillRect(mouseX, mouseY, 100, 300)
+    ctx.stroke();
 }
 
 var drawCircle = function(e) {
     var mouseX = e.offsetX;
     var mouseY = e.offsetY;
     console.log("mouseclick registered at ", mouseX, mouseY);
-    ctx.fillSyle = "red";
+    ctx.fillStyle = "red";
     ctx.beginPath();
     ctx.arc(mouseX, mouseY, 50, 0, 2 * Math.PI);
     ctx.fill();
+    ctx.stroke();
 }
 
 var draw = function(e) {
