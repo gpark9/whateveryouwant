@@ -1,0 +1,10 @@
+JiangPark Morgan: Ian Jiang, Gitae Park
+SoftDev pd7
+K30 -- canvas based JS drawing
+2023-04-24m
+
+How do we change the color of the shapes? We used fillStyle = "red"; but there are no changes.
+What exactly is e?
+
+To draw circles, you need to begin a path, use arc() to specify the arc you want then use fill() to color it in.
+We changed the text in the button by using innerHTML.
