@@ -1,0 +1,7 @@
+Team JiangPark Morgan :: Ian Jiang, Gitae Park 
+SoftDev pd7
+K28 -- Getting more comfortable with the dev console and the DOM
+2023-04-05w
+--------------------------------------------------
+
+- You need to refresh your html page for any changes in the JavaScript file to take place.
