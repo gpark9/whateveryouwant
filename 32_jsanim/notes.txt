@@ -1,0 +1,9 @@
+Team JiangPark Morgan :: Ian Jiang, Gitae Park
+SoftDev pd7
+K32 -- JS Bounce
+2023-04-27t
+
+Image() is constructor to create an image variable
+Set the value of the image variable to the name of the image in a string
+drawImage will draw it in the canvas.
+What does preventDefault() do? There is an error when the funcntion is ran and the program functions properly when the function is commented out
